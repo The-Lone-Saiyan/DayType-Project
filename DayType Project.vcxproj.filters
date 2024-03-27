@@ -18,5 +18,13 @@
     <ClCompile Include="DayType Project.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="DayType.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DayType.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
