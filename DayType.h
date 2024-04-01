@@ -30,11 +30,11 @@ public:
 	//Constructor
 	DayType(string DayofWeek[0]);
 
-	private:
+private:
 
-		string Day;
-		static string DayofWeek[7];
+	string Day;
+	static string DayofWeek[7];
 
 
-}
+};
 
