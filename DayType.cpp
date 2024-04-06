@@ -1,6 +1,8 @@
 #include <iostream>
 #include "DayType.h"
 
+using namespace std;
+
 	string DayType::DayofWeek[] = { "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday" };
 
     void DayType::SetDay(string aDay)

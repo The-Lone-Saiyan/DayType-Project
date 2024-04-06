@@ -7,6 +7,8 @@ class DayType
 {
 public:
 
+	static string DayofWeek[7];
+
 	//Pre-Condition: A valid day is supplied.
 	//Post-Condtion: Stores day if valid, otherwise stores default.
 	void SetDay(string);
@@ -28,12 +30,11 @@ public:
 	void AddDays(int NumDays);
 
 	//Constructor
-	DayType(string DayofWeek[0]);
+	DayType(string = DayofWeek[0]);
 
 private:
 
 	string Day;
-	static string DayofWeek[7];
 
 
 };

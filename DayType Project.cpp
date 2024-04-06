@@ -23,6 +23,8 @@ int main()
 		cout << DayType::DayofWeek[i] << " ";
 	cout << endl;
 
+	cin >> DayofWeek[i];
+
 
 	DayType Day;
 	Day.Print();
