@@ -26,45 +26,64 @@ string DayType::NextDay()
 
     if (CurrentDay == DayofWeek[0])
     {
-        cout << "The next day of the week is " << DayofWeek[1] << endl;
+        cout << "Tomorrow is " << DayofWeek[1] << endl;
+        cout << "Yesterday was " << DayofWeek[6] << endl;
+
+        return Day;
     }
     
     if (CurrentDay == DayofWeek[1])
     {
-        cout << "The next day of the week is " << DayofWeek[2] << endl;
+        cout << "Tomorrow is " << DayofWeek[2] << endl;
+        cout << "Yesterday was " << DayofWeek[0] << endl;
+
+        return Day;
     }
 
     if (CurrentDay == DayofWeek[2])
     {
-        cout << "The next day of the week is " << DayofWeek[3] << endl;
+        cout << "Tomorrow is " << DayofWeek[3] << endl;
+        cout << "Yesterday was " << DayofWeek[1] << endl;
+
+        return Day;
     }
 
     if (CurrentDay == DayofWeek[3])
     {
-        cout << "The next day of the week is " << DayofWeek[4] << endl;
+        cout << "Tomorrow is " << DayofWeek[4] << endl;
+        cout << "Yesterday was " << DayofWeek[2] << endl;
+
+        return Day;
     }
 
     if (CurrentDay == DayofWeek[4])
     {
-        cout << "The next day of the week is " << DayofWeek[5] << endl;
+        cout << "Tomorrow is " << DayofWeek[5] << endl;
+        cout << "Yesterday was " << DayofWeek[3] << endl;
+
+        return Day;
     }
 
     if (CurrentDay == DayofWeek[5])
     {
-        cout << "The next day of the week is " << DayofWeek[6] << endl;
+        cout << "Tomorrow is " << DayofWeek[6] << endl;
+        cout << "Yesterday was " << DayofWeek[4] << endl;
+
+        return Day;
     }
 
     if (CurrentDay == DayofWeek[6])
     {
-        cout << "The next day of the week is " << DayofWeek[0] << endl;
+        cout << "Tomorrow is " << DayofWeek[0] << endl;
+        cout << "Yesterday was " << DayofWeek[5] << endl;
+
+        return Day;
     }
 
-    else if(CurrentDay != DayofWeek[0, 1, 2, 3, 4, 5, 6])
+    else
     {
         cout << "Invalid entry.";
     }
-
-    return Day;
 }
 
 string DayType::PreviousDay()
@@ -74,49 +93,63 @@ string DayType::PreviousDay()
     if (CurrentDay == DayofWeek[0])
     {
         cout << "The previous day of the week is " << DayofWeek[6] << endl;
+
+        return Day;
     }
 
     if (CurrentDay == DayofWeek[1])
     {
         cout << "The previous day of the week is " << DayofWeek[0] << endl;
+
+        return Day;
     }
 
     if (CurrentDay == DayofWeek[2])
     {
         cout << "The previous day of the week is " << DayofWeek[1] << endl;
+
+        return Day;
     }
 
     if (CurrentDay == DayofWeek[3])
     {
         cout << "The previous day of the week is " << DayofWeek[2] << endl;
+
+        return Day;
     }
 
     if (CurrentDay == DayofWeek[4])
     {
         cout << "The previous day of the week is " << DayofWeek[3] << endl;
+
+        return Day;
     }
 
     if (CurrentDay == DayofWeek[5])
     {
         cout << "The previous day of the week is " << DayofWeek[4] << endl;
+
+        return Day;
     }
 
     if (CurrentDay == DayofWeek[6])
     {
         cout << "The previous day of the week is " << DayofWeek[5] << endl;
-    }
 
-    else if (CurrentDay != DayofWeek[0, 1, 2, 3, 4, 5, 6])
-    {
-        cout << "Invalid entry.";
+        return Day;
     }
-
-    return Day;
 }
 
 void DayType::AddDays(int NumDays)
 {
+    int Index = 0;
+    int NewIndex;
 
+    NewIndex = (Index + NumDays) % 7;
+
+    cout << "How many days are you adding? ";
+    cin >> NumDays;
+    cout << NewIndex;
 }
 
 void DayType::Print() const

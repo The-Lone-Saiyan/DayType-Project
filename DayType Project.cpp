@@ -4,7 +4,7 @@
 
 using namespace std;
 
-int i;
+int NumDays;
 
 int main()
 {
@@ -15,4 +15,5 @@ int main()
 	cout << "Please input the day of the week: ";
 	Day.NextDay();
 	//Day.PreviousDay();
+	//Day.AddDays(NumDays);
 }
