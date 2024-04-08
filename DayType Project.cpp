@@ -5,15 +5,16 @@
 using namespace std;
 
 int NumDays;
+string Next, Previous;
 
 int main()
 {
 	
 	DayType Day;
-	//Day.Print();
-
-	cout << "Please input the day of the week: ";
-	Day.NextDay();
-	//Day.PreviousDay();
+	Day.Print();
+	Next = Day.NextDay();
+	cout << Next << endl;
+	Previous = Day.PreviousDay();
+	cout << Previous << endl;
 	//Day.AddDays(NumDays);
 }
