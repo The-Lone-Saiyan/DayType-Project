@@ -5,16 +5,19 @@
 using namespace std;
 
 int NumDays;
-string Next, Previous;
+string Next, Previous, Add;
 
 int main()
 {
 	
 	DayType Day;
-	//Day.Print();
+
 	Next = Day.NextDay();
 	cout << Next << endl;
+
 	Previous = Day.PreviousDay();
 	cout << Previous << endl;
+
 	Day.AddDays(NumDays);
+	cout << Add << endl;
 }
