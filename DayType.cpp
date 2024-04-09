@@ -81,9 +81,8 @@ void DayType::AddDays(int NumDays)
             index = i;
             break;
         }
+        NewIndex = (index + NumDays) % 7;
     }
-
-    NewIndex = (index + NumDays) % 7;
 
     cout << "\nHow many days are you adding? ";
     cin >> NumDays;
