@@ -11,10 +11,10 @@ int main()
 {
 	
 	DayType Day;
-	Day.Print();
+	//Day.Print();
 	Next = Day.NextDay();
 	cout << Next << endl;
 	Previous = Day.PreviousDay();
 	cout << Previous << endl;
-	//Day.AddDays(NumDays);
+	Day.AddDays(NumDays);
 }

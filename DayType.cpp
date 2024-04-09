@@ -24,6 +24,8 @@ string DayType::NextDay()
     int NewIndex;
     int index = 0;
 
+    cout << "Tomorrow is ";
+
     for (int i = 0; i < 7; i++)
     {
         if (DayofWeek[i] == Day)
@@ -48,6 +50,8 @@ string DayType::PreviousDay()
     int NewIndex;
     int index = 0;
 
+    cout << "Yesterday was ";
+
     for (int i = 0; i < 7; i++)
     {
         if (DayofWeek[i] == Day)
@@ -67,10 +71,19 @@ string DayType::PreviousDay()
 
 void DayType::AddDays(int NumDays)
 {
-    int Index = 0;
+    int index = 0;
     int NewIndex;
 
-    NewIndex = (Index + NumDays) % 7;
+    for (int i = 0; i < 7; i++)
+    {
+        if (DayofWeek[i] == Day)
+        {
+            index = i;
+            break;
+        }
+    }
+
+    NewIndex = (index + NumDays) % 7;
 
     cout << "How many days are you adding? ";
     cin >> NumDays;
@@ -84,5 +97,7 @@ void DayType::Print() const
 
 DayType::DayType(string start)
 {
+    cout << "What day is it? ";
+    cin >> start;
     SetDay(start);
 }
