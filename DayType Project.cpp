@@ -5,11 +5,12 @@
 using namespace std;
 
 int NumDays;
-string Next, Previous, Add;
+string Next, Previous, Add, start, Day;
 
 int main()
 {
-	
+	cout << "What day is it? ";
+	cin >> Day;
 	DayType Day;
 
 	Next = Day.NextDay();
@@ -18,6 +19,9 @@ int main()
 	Previous = Day.PreviousDay();
 	cout << Previous << endl;
 
+	cout << "\nHow many days are you adding? ";
+	cin >> NumDays;
 	Day.AddDays(NumDays);
-	cout << Add << endl;
+
+	return 0;
 }

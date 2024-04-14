@@ -81,11 +81,9 @@ void DayType::AddDays(int NumDays)
             index = i;
             break;
         }
-        NewIndex = (index + NumDays) % 7;
     }
-
-    cout << "\nHow many days are you adding? ";
-    cin >> NumDays;
+        NewIndex = (index + NumDays) % 7;
+    
     cout << "\nIt will be " << DayofWeek[NewIndex] << " in " << NumDays << " days." << endl;
 }
 
@@ -96,7 +94,5 @@ void DayType::Print() const
 
 DayType::DayType(string start)
 {
-    cout << "What day is it? ";
-    cin >> start;
     SetDay(start);
 }
